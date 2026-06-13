@@ -2018,3 +2018,276 @@ Blockly.Python['1781317743168'] = function(block) {
   return code;
 }
 
+Blockly.Blocks['sensor'] = {
+  init: function () {
+    this.jsonInit({
+      type: 'sensor',
+      message0: '%{BKY_SENSOR} %1 %{BKY_SENSOR_PORT} %2 %{BKY_SENSOR_VAR} %3',
+      args0: [
+        {
+          type: 'input_dummy',
+        },
+        {
+          type: 'field_dropdown',
+          name: 'port',
+          options: portOptions,
+        },
+        {
+          type: 'input_value',
+          name: 'variable',
+          check: 'Variable',
+        },
+      ],
+      previousStatement: null,
+      nextStatement: null,
+      colour: Blockly.Msg.ControlHUE,
+      toolip: '',
+      helpUrl: '',
+    });
+  }
+};
+
+Blockly.Lua['sensor'] = function(block){
+  const variable = Blockly.Lua.valueToCode(block, "variable", Blockly.JavaScript.ORDER_NONE);
+  const port = block.getFieldValue("port");
+  return `${variable} = nil\n`;
+}
+
+Blockly.Python['sensor'] = function (block) {
+  var port = block.getFieldValue('port');
+  var variable = Blockly.Python.valueToCode(block, 'variable', Blockly.Python.ORDER_NONE);
+  var code = '';
+  if (variable) {
+    code = `${variable} = sensor_port.get_gpio(${port})\n`;
+  } else {
+    code = `sensor_port.get_gpio(${port})\n`;
+  }
+
+  return code;
+}
+
+Blockly.Blocks['Stop_Signal'] = {
+  init: function () {
+    this.jsonInit({
+      type: 'Stop_Signal',
+      message0: '%{BKY_STOP_SIGNAL}',
+      previousStatement: 'motion_block',
+      nextStatement: 'motion_block',
+      colour: '#48BCBC',
+      toolip: '',
+      helpUrl: '',
+    });
+  }
+};
+
+Blockly.Lua['Stop_Signal'] = function (block) {
+  const code = [
+    'MOTOrigid16(25,25,25,60,60,60,60,60,25,25,25,60,60,60,60,60)',
+    'MOTOsetspeed(30)',
+    'MOTOmove16(80, 30, 100, 100, 93, 55, 124, 100, 120, 170, 100, 100, 107, 145, 76, 100)',
+    'MOTOwait()',
+    'MOTOsetspeed(48)',
+    'MOTOmove16(92, 182, 71, 100, 93, 57, 124, 101, 121, 171, 100, 101, 108, 145, 76, 101)',
+    'MOTOwait()',
+    'DelayMs(1000)',
+    'MOTOsetspeed(48)',
+    'MOTOmove16(80, 30, 100, 100, 93, 55, 124, 100, 120, 170, 100, 100, 107, 145, 76, 100)',
+    'MOTOwait()',
+    '',
+  ];
+  return code.join('\n');
+}
+
+Blockly.Python['Stop_Signal'] = function (block) {
+  let code = "base_action.action('" + Blockly.Msg['STOP_SIGNAL'] + "')\n";
+  return code;
+}
+
+Blockly.Blocks['io_out'] = {
+  init: function () {
+    this.jsonInit({
+      type: 'io_out',
+      message0: '%{BKY_IO_OUTPUT} %1 %{BKY_IO_OUTPUT_PORT} %2',
+      args0: [
+        {
+          type: 'field_dropdown',
+          name: 'output_value',
+          options: [
+            ['0', '0'],
+            ['1', '1'],
+          ],
+        },
+        {
+          type: 'field_dropdown',
+          name: 'port',
+          options: portOptions,
+        },
+      ],
+      inputsInline: true,
+      previousStatement: null,
+      nextStatement: null,
+      colour: Blockly.Msg.ControlHUE,
+      tooltip: '',
+      helpUrl: '',
+    });
+  }
+};
+
+Blockly.Lua['io_out'] = function(block) {
+  const output = block.getFieldValue("output_value");
+  const port = block.getFieldValue("port");
+
+  return `WriteGpio(${port}, ${output})\n`;
+}
+
+Blockly.Python['io_out'] = function (block) {
+  var code = '';
+  var port = block.getFieldValue('port');
+  var output_value = block.getFieldValue('output_value');
+
+  code = `sensor_port.set_output(${port}, ${output_value})\n`;
+  return code;
+}
+
+Blockly.Blocks['delayed'] = {
+  init: function () {
+    this.jsonInit({
+      type: 'delayed',
+      message0: '%{BKY_DELAY} %1 %{BKY_SECOND_DELAY_TIME}',
+      args0: [
+        {
+          type: 'field_number',
+          name: 'time',
+          value: 0,
+          min: 0,
+          max: 5000,
+          precision: 0.1,
+        },
+      ],
+      previousStatement: null,
+      nextStatement: null,
+      colour: Blockly.Msg.ControlHUE,
+      tooltip: '',
+      helpUrl: '',
+    });
+  }
+};
+
+Blockly.Lua['delayed'] = function(block) {
+  let time = parseInt(block.getFieldValue("time"), 0);
+  const MAX_TIME = 5000;
+  const ms = 1000;
+  time = time * ms;
+  if (time > MAX_TIME) {
+    time = MAX_TIME;
+  }
+  let code = `DelayMs(${time})\n`;
+  return code;
+}
+
+Blockly.Python['delayed'] = function (block) {
+  const time = block.getFieldValue('time') || 0;
+  Blockly.Python.definitions_['import_time'] = 'import time';
+  const code = `time.sleep(${time})\n`;
+  return code;
+}
+
+Blockly.Blocks['aelos_for'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "aelos_for",
+      "message0": "%{BKY_AELOS_LOOP} %1 %{BKY_AELOS_LOOP_TIMES} %2 %{BKY_AELOS_DO} %3",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "times",
+          "check": ["Number", "Variable"]
+        },
+        {
+          "type": "input_dummy"
+        },
+        {
+          "type": "input_statement",
+          "name": "do"
+        }
+      ],
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": '#86C113',
+      "tooltip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['aelos_for'] = function (block) {
+  const times = Blockly.Lua.valueToCode(block, 'times', Blockly.Lua.ORDER_NONE) || '0';
+  const do_code = Blockly.Lua.statementToCode(block, 'do');
+
+  const code = `for i = 1,${times},1\ndo\n${do_code}\nHKEY()\nend\n`;
+
+  return code;
+}
+
+Blockly.Python['aelos_for'] = function (block) {
+  const times = Blockly.Python.valueToCode(block, 'times', Blockly.Python.ORDER_NONE) || '0';
+  const do_code = Blockly.Python.statementToCode(block, 'do') || Blockly.Python.PASS;
+
+  const code = `for i in range(${times}):\n${do_code}`;
+
+  return code;
+}
+
+Blockly.Blocks['repeat_until'] = {
+  init: function () {
+    this.jsonInit({
+      type: 'repeat_until',
+      message0: '%{BKY_REPEAT_UNTIL} %1 %{BKY_ACTION} %2',
+      args0: [
+        {
+          type: 'input_value',
+          name: 'condition',
+          check: 'Boolean',
+        },
+        {
+          type: 'input_statement',
+          name: 'block',
+        },
+      ],
+      previousStatement: null,
+      nextStatement: null,
+      colour: '#86C113',
+      tooltip: '',
+      helpUrl: '',
+    });
+  }
+};
+
+Blockly.Lua['repeat_until'] = function (block) {
+  const condition = Blockly.Lua.valueToCode(block, 'condition', Blockly.Lua.ORDER_NONE);
+  const blockCode = Blockly.Lua.statementToCode(block, 'block', Blockly.Lua.ORDER_NONE);
+  const temp_ = blockCode.split('\n');
+  let template = [
+    'while(true)',
+    'do',
+    '  if ${template} then',
+    '    break',
+    '  end',
+    ...temp_,
+    'end',
+    '',
+  ];
+  let code = template.join('\n').replace('${template}', condition);
+  if (!condition) {
+    code = '';
+  }
+  return code;
+}
+
+Blockly.Python['repeat_until'] = function (block) {
+  const blockCode =
+    Blockly.Python.valueToCode(block, 'condition', Blockly.Python.ORDER_NONE) || 'False';
+  let do_code = Blockly.Python.statementToCode(block, 'block') || Blockly.Python.PASS;
+  return `while not ${blockCode}:\n${do_code}`;
+}
+
