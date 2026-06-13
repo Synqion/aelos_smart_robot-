@@ -1,6 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="gR2Xo_5BDBkf-ATNKsRw">isOnPos</variable>
     <variable type="" id="E.oX=Qp@|mh$F+10zMTo">lableNum</variable>
     <variable type="" id="B:=kp*_Y#V]WU9-GK*3t">remoteCtrl</variable>
     <variable type="" id="np+qU.Rk(#/%:LY(mJAs">ArtagA</variable>
@@ -63,20 +62,6 @@
         </next>
       </block>
     </next>
-  </block>
-  <block type="procedures_defreturn" id="{%%b)9gl(R,`~3.qeITO" x="-2051" y="56">
-    <field name="NAME">moveToTarget</field>
-    <comment pinned="false" h="80" w="160">移动到目标地点</comment>
-    <statement name="STACK">
-      <block type="variables_set" id="6l?Y{lD)Ehec82?*qC[}">
-        <field name="VAR" id="gR2Xo_5BDBkf-ATNKsRw" variabletype="">isOnPos</field>
-        <value name="VALUE">
-          <block type="math_number" id="!X2x3sB]TXd(`.#rAEQo">
-            <field name="NUM">0</field>
-          </block>
-        </value>
-      </block>
-    </statement>
   </block>
   <block type="Take_a_slow_step_forward" id="t6y[ha#d(wJ+2cRVL)M8" x="706" y="-81"></block>
   <block type="Pan_left_1_step" id="LkAZLk](wfU`(xT1^G@p" x="731" y="45"></block>
@@ -431,7 +416,7 @@
                                                                                           <block type="1781253167637" id="4oQ$/Q12,=8^hcshyDP1"></block>
                                                                                         </statement>
                                                                                         <statement name="else_do">
-                                                                                          <block type="Salute_two" id="RP5|QL!w=y,#o.VVmbmN"></block>
+                                                                                          <block type="1781313790614" id="I=+giQ;8,dhOdZs4pA;x"></block>
                                                                                         </statement>
                                                                                       </block>
                                                                                     </statement>
@@ -479,10 +464,6 @@
   <block type="Pan_right_1_step" id="91;piWN.v@EiB-~cpU$B" x="683" y="134"></block>
   <block type="1781247925217" id="y@vZYr.n![Ep!.{6bW*t" x="80" y="212"></block>
   <block type="Take_a_slow_step_backward" id="8+;`KyuU^g!D)Kq)f%)P" x="729" y="206"></block>
-  <block type="procedures_defreturn" id="nV!U:Pv%fpz+QGUTLTft" x="-2502" y="377">
-    <field name="NAME">做点什么</field>
-    <comment pinned="false" h="80" w="160">描述该功能...</comment>
-  </block>
   <block type="Pan_right_1_step" id="7_Bo|C=LYLE)D^qccU:(" x="174" y="283">
     <next>
       <block type="Turn_left_1_step" id="_3sxV:l/0=PTo8_6IT!}">
