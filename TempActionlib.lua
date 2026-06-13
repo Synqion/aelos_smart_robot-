@@ -9890,6 +9890,42 @@ function leju_9860bd9422a9a01eb72975de1afd9d7f()
 	MOTOwait()
 end
 
+-- holdBoxRotateLeft
+function leju_8158c8a0b77d18bfc01af63d3a150ac5()
+
+	MOTOrigid16(60,10,190,65,65,65,65,65,140,190,10,65,65,65,65,65)
+	MOTOsetspeed(30)
+	MOTOmove19(60,10,190,100,93,55,124,100,140,190,10,100,107,145,76,100,0,0,100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60,10,190,95,63,55,94,95,140,190,10,105,77,145,46,105,0,0,100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60,10,190,100,93,55,124,100,140,190,10,100,107,145,76,100,0,0,100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60,10,190,100,93,55,124,100,140,190,10,100,107,145,76,100,0,0,100)
+	MOTOwait()
+end
+
+-- holdBoxRotateLeft£¨3£©
+function leju_a24b5583af2a1d43622417567a56557a()
+	MOTOsetspeed(30)
+	MOTOrigid16(60,10,190,65,65,65,65,65,140,190,10,65,65,65,65,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60, 10, 190, 95, 63, 55, 94, 95, 140, 190, 10, 105, 77, 145, 46, 105, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
  -- play_020-Ç×½ü
 function leju_744e62498e985f9fce29be97a270c1c5()
 	Play_AI_music("0:/music/020-Ç×½ü.mp3")

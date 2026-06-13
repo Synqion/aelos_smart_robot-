@@ -117,6 +117,33 @@ def leju_function_MoveBlockbyColor():
         else:
             base_action.action('holdBoxMoveBack')
 
+"""手柄移动控制
+"""
+def leju_function_HMC():
+    global leju_variable_isOnPos, leju_variable_lableNum, leju_variable_colorx, leju_variable_remoteCtrl, leju_variable_sensor1, leju_variable_colory, leju_variable_ArtagA, leju_variable_ArtagX, leju_variable_ArtagY, leju_variable_dt, leju_variable_ut
+    while True:
+        leju_variable_remoteCtrl = get_key.key()
+        if leju_variable_remoteCtrl == 193:
+            base_action.action('holdBoxMoveFront（2）')
+        if leju_variable_remoteCtrl == 196:
+            base_action.action('holdBoxMoveLeft')
+        if leju_variable_remoteCtrl == 195:
+            base_action.action('holdBoxMoveBack')
+        if leju_variable_remoteCtrl == 194:
+            base_action.action('holdBoxMoveRight')
+        if leju_variable_remoteCtrl == 245:
+            base_action.action('holdBoxRotateLeft')
+        if leju_variable_remoteCtrl == 246:
+            base_action.action('holdBoxRotateRight（2）')
+        if leju_variable_remoteCtrl == 197:
+            pass
+        if leju_variable_remoteCtrl == 198:
+            pass
+        if leju_variable_remoteCtrl == 199:
+            base_action.action('拿捏latest')
+        if leju_variable_remoteCtrl == 200:
+            pass
+
 """手柄控制
 """
 def leju_function_StickCotrol():
@@ -283,7 +310,7 @@ def main():
     try:
 
 
-        leju_function_TempDetection()
+        leju_function_HMC()
 
     except Exception as e:
         nodes.serror(e)
