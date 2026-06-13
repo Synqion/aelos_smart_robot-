@@ -9625,6 +9625,271 @@ function leju_bfe89baa3597093004535d4cf2c5b529()
 	MOTOwait()
 end
 
+-- hMoveLeft
+function leju_ed36fd386cd68209e08bef8eacdcb703()
+	MOTOsetspeed(30)
+	MOTOrigid16(30,10,190,45,65,65,65,65,30,190,10,45,65,65,65,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(80, 10, 190, 100, 93, 55, 124, 100, 120, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOrigid16(20,10,190,85,85,95,85,85,20,190,10,85,85,95,85,85,0,0,0)
+	MOTOsetspeed(20)
+	MOTOmove19(80, 10, 190, 90, 93, 54, 124, 90, 120, 190, 10, 110, 107, 146, 76, 100, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(20)
+	MOTOmove19(80, 10, 190, 95, 93, 54, 124, 105, 120, 190, 10, 106, 107, 146, 76, 115, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOrigid16(20,10,190,85,85,95,85,85,20,190,10,85,55,55,55,85,0,0,0)
+	MOTOsetspeed(20)
+	MOTOmove19(80, 10, 190, 106, 93, 54, 124, 110, 120, 190, 10, 115, 107, 146, 76, 115, 0, 0, 100)
+	MOTOwait()
+	MOTOrigid16(20,10,190,85,55,55,55,85,20,190,10,85,85,95,85,85,0,0,0)
+	MOTOsetspeed(10)
+	MOTOmove19(80, 10, 190, 100, 93, 55, 124, 100, 120, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- hMoveRight
+function leju_29cebe4f3e9f51c401a251961c1bd530()
+	MOTOsetspeed(30)
+	MOTOrigid16(30,10,190,45,65,65,65,65,30,190,10,45,65,65,65,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(80, 10, 190, 100, 93, 55, 124, 100, 120, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOrigid16(20,10,190,85,85,95,85,85,20,190,10,85,85,95,85,85,0,0,0)
+	MOTOsetspeed(20)
+	MOTOmove19(80, 10, 190, 90, 93, 54, 124, 100, 120, 190, 10, 110, 107, 146, 76, 110, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(20)
+	MOTOmove19(80, 10, 190, 94, 93, 54, 124, 85, 120, 190, 10, 105, 107, 146, 76, 95, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOrigid16(20,10,190,85,55,55,55,85,20,190,10,85,85,95,85,85,0,0,0)
+	MOTOsetspeed(20)
+	MOTOmove19(80, 10, 190, 85, 93, 54, 124, 85, 120, 190, 10, 94, 107, 146, 76, 90, 0, 0, 100)
+	MOTOwait()
+	MOTOrigid16(20,10,190,85,55,55,55,85,20,190,10,85,85,95,85,85,0,0,0)
+	MOTOsetspeed(10)
+	MOTOmove19(80, 10, 190, 100, 93, 55, 124, 100, 120, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- holdBoxMoveBack（2）
+function leju_daae6555c72a9342e627c00c9fc8e24c()
+	MOTOsetspeed(30)
+	MOTOrigid16(60,10,190,65,75,80,75,65,140,190,10,65,75,80,75,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 90, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 86, 90, 95, 84, 90, 140, 190, 10, 94, 107, 146, 78, 87, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 88, 71, 53, 105, 85, 140, 190, 10, 93, 100, 144, 79, 91, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 106, 93, 53, 124, 111, 140, 190, 10, 114, 87, 163, 42, 110, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 106, 95, 53, 122, 113, 140, 190, 10, 114, 110, 105, 114, 110, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 107, 100, 56, 121, 109, 140, 190, 10, 112, 129, 147, 95, 115, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 86, 113, 37, 158, 90, 140, 190, 10, 94, 107, 147, 76, 89, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 86, 110, 95, 100, 90, 140, 190, 10, 94, 107, 146, 77, 89, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(20)
+	MOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 90, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- holdBoxMoveFront（3）
+function leju_0d76ce7edd4e79dd7cfd109d5ad8d644()
+	MOTOsetspeed(30)
+	MOTOrigid16(60,10,190,65,75,80,75,65,140,190,10,65,75,80,75,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 89, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 86, 125, 95, 110, 90, 140, 190, 10, 94, 107, 146, 76, 87, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 86, 113, 37, 156, 88, 140, 190, 10, 94, 107, 146, 77, 89, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 107, 100, 56, 124, 111, 140, 190, 10, 112, 129, 155, 93, 110, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 106, 95, 54, 123, 113, 140, 190, 10, 114, 75, 105, 90, 110, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 106, 93, 54, 123, 111, 140, 190, 10, 114, 87, 163, 44, 112, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 88, 71, 45, 107, 90, 140, 190, 10, 93, 100, 144, 76, 89, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 86, 110, 95, 100, 90, 140, 190, 10, 94, 107, 146, 77, 89, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(20)
+	MOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 89, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- 抱块小幅度左转2
+function leju_4f16a05bd346fcac0a1bed100179820e()
+	MOTOsetspeed(30)
+	MOTOrigid16(30,30,30,85,85,85,85,45,30,30,30,85,85,85,85,45,0,0,0)
+	MOTOsetspeed(40)
+	MOTOmove19(60, 15, 190, 96, 97, 55, 130, 96, 132, 187, 10, 101, 117, 145, 82, 103, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(20)
+	MOTOmove19(60, 15, 190, 96, 97, 55, 130, 103, 132, 187, 10, 101, 117, 145, 82, 107, 0, 0, 100)
+	MOTOwait()
+	DelayMs(200)
+	MOTOsetspeed(15)
+	MOTOmove19(60, 15, 190, 100, 88, 55, 124, 100, 132, 187, 10, 100, 107, 135, 81, 104, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 15, 190, 100, 93, 55, 124, 100, 132, 187, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- 抱块小幅度右转2
+function leju_50a2dc329fe4e3431b0167e2642f1ccc()
+	MOTOsetspeed(30)
+	MOTOrigid16(30,30,30,85,85,85,85,45,30,30,30,85,85,85,85,45,0,0,0)
+	MOTOsetspeed(45)
+	MOTOmove19(60, 15, 190, 99, 88, 55, 118, 97, 132, 187, 10, 104, 98, 145, 70, 104, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(13)
+	MOTOmove19(60, 15, 190, 99, 88, 55, 118, 76, 132, 187, 10, 104, 98, 145, 70, 93, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(8)
+	MOTOmove19(60, 15, 190, 100, 98, 65, 119, 85, 132, 187, 10, 100, 107, 145, 76, 93, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(20)
+	MOTOmove19(60, 15, 190, 98, 92, 52, 124, 93, 132, 187, 10, 100, 107, 145, 76, 93, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(6)
+	MOTOmove19(60, 15, 190, 100, 93, 55, 124, 100, 132, 187, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	DelayMs(200)
+end
+
+-- 有块小左移
+function leju_1e74236babf7da335d7a08f921920667()
+	MOTOsetspeed(30)
+	MOTOrigid16(100,100,100,65,100,100,100,65,100,100,100,65,100,100,100,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(60, 15, 190, 100, 93, 55, 128, 100, 132, 187, 10, 100, 107, 145, 72, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOrigid16(20,20,20,85,85,95,85,85,20,20,20,85,100,100,100,85,0,0,0)
+	MOTOsetspeed(10)
+	MOTOmove19(60, 15, 190, 90, 98, 64, 128, 90, 132, 187, 10, 95, 107, 146, 72, 95, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(20)
+	MOTOmove19(60, 15, 190, 95, 93, 54, 128, 90, 132, 187, 10, 105, 107, 146, 72, 100, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(12)
+	MOTOmove19(60, 15, 190, 98, 93, 54, 128, 102, 132, 187, 10, 109, 107, 146, 72, 112, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 15, 190, 98, 94, 54, 128, 102, 132, 187, 10, 103, 105, 139, 77, 109, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(10)
+	MOTOmove19(60, 15, 190, 98, 93, 54, 128, 102, 132, 187, 10, 103, 105, 139, 77, 109, 0, 0, 100)
+	MOTOwait()
+	DelayMs(100)
+	MOTOsetspeed(10)
+	MOTOmove19(60, 15, 190, 100, 93, 55, 128, 100, 132, 187, 10, 100, 107, 145, 72, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- 放下箱子
+function leju_464243ead844cf84767cc592f2752203()
+	MOTOsetspeed(30)
+	MOTOrigid16(40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,0,0,0)
+	MOTOsetspeed(15)
+	MOTOmove19(60, 15, 190, 100, 93, 55, 130, 98, 132, 187, 10, 100, 107, 145, 70, 102, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(15)
+	MOTOmove19(60, 15, 190, 99, 90, 150, 38, 100, 132, 187, 10, 101, 111, 50, 163, 99, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(15)
+	MOTOmove19(59, 14, 148, 99, 122, 150, 39, 100, 134, 188, 56, 101, 79, 50, 163, 99, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(15)
+	MOTOmove19(72, 14, 147, 99, 122, 150, 39, 100, 130, 176, 57, 101, 79, 50, 163, 99, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(15)
+	MOTOmove19(72, 14, 147, 99, 98, 150, 40, 100, 130, 176, 57, 100, 105, 50, 163, 99, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(20)
+	MOTOmove19(80, 30, 100, 100, 93, 55, 124, 100, 120, 170, 100, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- holdBoxRotateLeft（2）
+function leju_4c674a7ff8b0c41fce98364a075febb6()
+	MOTOsetspeed(30)
+	MOTOrigid16(60,10,130,65,65,65,65,65,140,190,10,65,65,65,65,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 130, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60, 10, 130, 95, 63, 55, 94, 95, 140, 190, 10, 105, 77, 145, 46, 105, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60, 10, 130, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 130, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
+-- holdBoxRotateRight（2）
+function leju_9860bd9422a9a01eb72975de1afd9d7f()
+	MOTOsetspeed(30)
+	MOTOrigid16(60,10,190,65,65,65,65,65,140,190,10,65,65,65,65,65,0,0,0)
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60, 10, 190, 95, 123, 55, 154, 95, 140, 190, 10, 105, 137, 145, 106, 105, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(24)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+	MOTOsetspeed(30)
+	MOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)
+	MOTOwait()
+end
+
  -- play_020-亲近
 function leju_744e62498e985f9fce29be97a270c1c5()
 	Play_AI_music("0:/music/020-亲近.mp3")
@@ -9743,4 +10008,59 @@ end
  -- play_汤姆猫
 function leju_68d24361e88c5c445c8c8ff927ad5e24()
 	Play_AI_music("0:/music/汤姆猫.mp3")
+end
+
+ -- play_1
+function leju_9f4c155bea76bcdc4f5dc962c8817154()
+	Play_AI_music("0:/music/1.mp3")
+end
+
+ -- play_2
+function leju_450ac2e6fc2879a7ae5b52f9182f43f3()
+	Play_AI_music("0:/music/2.mp3")
+end
+
+ -- play_3
+function leju_ce96c2d9f807a90f955f81aa0c9411e2()
+	Play_AI_music("0:/music/3.mp3")
+end
+
+ -- play_4
+function leju_528a4bb7381096fc8668adfe02a861dd()
+	Play_AI_music("0:/music/4.mp3")
+end
+
+ -- play_5
+function leju_41bf50b24b4280880efd79d2d35a3083()
+	Play_AI_music("0:/music/5.mp3")
+end
+
+ -- play_6
+function leju_d8d95418ea892d6da55527b24c5f2d6e()
+	Play_AI_music("0:/music/6.mp3")
+end
+
+ -- play_7
+function leju_efd8f1a38100c1e6971f28edad4d979b()
+	Play_AI_music("0:/music/7.mp3")
+end
+
+ -- play_8
+function leju_3ed3dd3c568e86e4accea73c22b22a1b()
+	Play_AI_music("0:/music/8.mp3")
+end
+
+ -- play_10
+function leju_6a9aed7257533dfe41469501c6e5163d()
+	Play_AI_music("0:/music/10.mp3")
+end
+
+ -- play_度
+function leju_51cd066aba42b3488a8ffb87293383bc()
+	Play_AI_music("0:/music/度.mp3")
+end
+
+ -- play_当前温度为
+function leju_d105152d415451275cbf6dac5cc00c5f()
+	Play_AI_music("0:/music/当前温度为.mp3")
 end

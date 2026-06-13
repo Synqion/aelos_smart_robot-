@@ -118,3 +118,58 @@ end
 function leju_68d24361e88c5c445c8c8ff927ad5e24()
 	Play_AI_music("0:/music/汤姆猫.mp3")
 end
+
+ -- play_1
+function leju_9f4c155bea76bcdc4f5dc962c8817154()
+	Play_AI_music("0:/music/1.mp3")
+end
+
+ -- play_2
+function leju_450ac2e6fc2879a7ae5b52f9182f43f3()
+	Play_AI_music("0:/music/2.mp3")
+end
+
+ -- play_3
+function leju_ce96c2d9f807a90f955f81aa0c9411e2()
+	Play_AI_music("0:/music/3.mp3")
+end
+
+ -- play_4
+function leju_528a4bb7381096fc8668adfe02a861dd()
+	Play_AI_music("0:/music/4.mp3")
+end
+
+ -- play_5
+function leju_41bf50b24b4280880efd79d2d35a3083()
+	Play_AI_music("0:/music/5.mp3")
+end
+
+ -- play_6
+function leju_d8d95418ea892d6da55527b24c5f2d6e()
+	Play_AI_music("0:/music/6.mp3")
+end
+
+ -- play_7
+function leju_efd8f1a38100c1e6971f28edad4d979b()
+	Play_AI_music("0:/music/7.mp3")
+end
+
+ -- play_8
+function leju_3ed3dd3c568e86e4accea73c22b22a1b()
+	Play_AI_music("0:/music/8.mp3")
+end
+
+ -- play_10
+function leju_6a9aed7257533dfe41469501c6e5163d()
+	Play_AI_music("0:/music/10.mp3")
+end
+
+ -- play_度
+function leju_51cd066aba42b3488a8ffb87293383bc()
+	Play_AI_music("0:/music/度.mp3")
+end
+
+ -- play_当前温度为
+function leju_d105152d415451275cbf6dac5cc00c5f()
+	Play_AI_music("0:/music/当前温度为.mp3")
+end
