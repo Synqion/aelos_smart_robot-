@@ -65,6 +65,9 @@
   </block>
   <block type="Take_a_slow_step_forward" id="t6y[ha#d(wJ+2cRVL)M8" x="706" y="-81"></block>
   <block type="Pan_left_1_step" id="LkAZLk](wfU`(xT1^G@p" x="731" y="45"></block>
+  <block type="logic_operation" id="CUd{Wr#i6ab$r(V*`G,f" x="-1254" y="184">
+    <field name="OP">AND</field>
+  </block>
   <block type="start" id="!JODDDpDPuBO86x3{r0}" deletable="false" x="-1426" y="243">
     <statement name="do">
       <block type="aelos_while" id="]6O}6{Dr_MEPiez2H#s7">
