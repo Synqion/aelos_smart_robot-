@@ -1720,27 +1720,109 @@ Blockly.Python['1781254094268'] = function(block) {
   return code;
 }
 
-Blockly.Blocks['1781313790614'] = {
-  init: function() {
+Blockly.Blocks['color_rgbhsv_discrimiation'] = {
+  init: function () {
     this.jsonInit({
-      "type": "1781313790614",
-      "message0": "释怀",
-      "previousStatement": "motion_block",
-      "nextStatement": "motion_block",
-      "colour": "#EDC611",
-      "toolip": "",
-      "helpUrl": ""
+      type: 'color_rgbhsv_discrimiation',
+      message0:
+        '%1 %{BKY_CAMERA} %{BKY_VISUAL_COLOR_RGBHSV_DISCRI_TITLE_1} %2 %{BKY_VISUAL_COLOR_RGBHSV_DISCRI_TITLE_2} %3 Hmin: %4 ~Hmax: %5 %6 Smin :  %7 ~Smax :  %8 %9 Vmin : %10 ~Vmax: %11',
+      args0: [
+        { type: 'field_dropdown', name: 'camera', options: cameraOptions() },
+        { type: 'input_dummy' },
+        { type: 'input_dummy' },
+        hsvArgs.hmin,
+        hsvArgs.hmax,
+        { type: 'input_dummy' },
+        hsvArgs.smin,
+        hsvArgs.smax,
+        { type: 'input_dummy' },
+        hsvArgs.vmin,
+        hsvArgs.vmax,
+      ],
+      output: 'Boolean',
+      colour: Blockly.Msg.VisualHUE,
+      tooltip: '',
+      helpUrl: '',
     });
   }
 };
 
-Blockly.Lua['1781313790614'] = function(block) {
-  let code = "MOTOrigid16(40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40)\n\n\n-- 举起\nMOTOsetspeed(14)\nMOTOmove19(60,10,190,100,93,55,124,100,140,190,10,100,107,145,76,100,0,0,100)\nMOTOwait()\nDelayMs(500)\n\n\n-- 拿捏\nMOTOsetspeed(14)\nMOTOmove19(60,10,150,100,130,150,50,100,140,190,50,100,70,50,150,100,0,0,100)\nMOTOwait()\nDelayMs(500)\n\n\n-- 伸手\nMOTOsetspeed(14)\nMOTOmove19(80,30,150,100,130,150,50,100,120,170,50,100,70,50,150,100,0,0,100)\nMOTOwait()\nDelayMs(500)\n";
-  return code;
+Blockly.Lua['color_rgbhsv_discrimiation'] = function (block) {
+  const code = 'false';
+  return [code, Blockly.Python.ORDER_NONE];
 }
 
-Blockly.Python['1781313790614'] = function(block) {
-  let code = "base_action.action('释怀')\n";
-  return code;
+Blockly.Python['color_rgbhsv_discrimiation'] = function (block) {
+  const camera = block.getFieldValue('camera');
+  const hmin = block.getFieldValue('hmin');
+  const hmax = block.getFieldValue('hmax');
+  const smin = block.getFieldValue('smin');
+  const smax = block.getFieldValue('smax');
+  const vmin = block.getFieldValue('vmin');
+  const vmax = block.getFieldValue('vmax');
+  const code = generateHsvCode(HAVE_COLOR, camera, { hmin, hmax, smin, smax, vmin, vmax });
+  return [code, Blockly.Python.ORDER_NONE];
+}
+
+Blockly.Blocks['color_rgbhsv_central_coordinate'] = {
+  init: function () {
+    this.jsonInit({
+      type: 'color_rgbhsv_central_coordinate',
+      message0:
+        '%1 %{BKY_CAMERA} %2 %{BKY_COLOR_RGBHSV_DISCRIMIATION_TITLE_1} %3 %4 %{BKY_COLOR_RGBHSV_DISCRIMIATION_TITLE_2} %5 Hmin: %6 ~Hmax: %7 %8 Smin :  %9 ~Smax :  %10 %11 Vmin : %12 ~Vmax: %13',
+      args0: [
+        { type: 'field_dropdown', name: 'camera', options: cameraOptions() },
+        { type: 'input_dummy' },
+        {
+          type: 'field_dropdown',
+          name: 'axis',
+          options: [
+            ['X%{BKY_COORDINATES}', '0'],
+            ['Y%{BKY_COORDINATES}', '1'],
+          ],
+        },
+        { type: 'input_dummy' },
+        { type: 'input_dummy' },
+        hsvArgs.hmin,
+        hsvArgs.hmax,
+        { type: 'input_dummy' },
+        hsvArgs.smin,
+        hsvArgs.smax,
+        { type: 'input_dummy' },
+        hsvArgs.vmin,
+        hsvArgs.vmax,
+      ],
+      output: 'Number',
+      colour: Blockly.Msg.VisualHUE,
+      tooltip: '',
+      helpUrl: '',
+    });
+  }
+};
+
+Blockly.Lua['color_rgbhsv_central_coordinate'] = function (block) {
+  const code = ERROR_VALUE;
+  return [code, Blockly.Lua.ORDER_NONE];
+}
+
+Blockly.Python['color_rgbhsv_central_coordinate'] = function (block) {
+  const camera = block.getFieldValue('camera');
+  const axis = block.getFieldValue('axis');
+  const hmin = block.getFieldValue('hmin');
+  const hmax = block.getFieldValue('hmax');
+  const smin = block.getFieldValue('smin');
+  const smax = block.getFieldValue('smax');
+  const vmin = block.getFieldValue('vmin');
+  const vmax = block.getFieldValue('vmax');
+  const hsvCode = generateHsvCode(GET_CENTRAL_COORDINATE, camera, {
+    hmin,
+    hmax,
+    smin,
+    smax,
+    vmin,
+    vmax,
+  });
+  const code = `${hsvCode}[${axis}]`;
+  return [code, Blockly.Python.ORDER_NONE];
 }
 
