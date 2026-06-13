@@ -1826,3 +1826,195 @@ Blockly.Python['color_rgbhsv_central_coordinate'] = function (block) {
   return [code, Blockly.Python.ORDER_NONE];
 }
 
+Blockly.Blocks['1781253479229'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781253479229",
+      "message0": "holdBoxMoveFront（2）",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781253479229'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(60,10,190,65,75,80,75,65,140,190,10,65,75,80,75,65,0,0,0)\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 89, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 86, 125, 95, 110, 90, 140, 190, 10, 94, 107, 146, 76, 87, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 86, 113, 37, 156, 88, 140, 190, 10, 94, 107, 146, 77, 89, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 107, 100, 56, 124, 111, 140, 190, 10, 112, 129, 155, 93, 110, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 106, 95, 54, 123, 113, 140, 190, 10, 114, 75, 105, 90, 110, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 106, 93, 54, 123, 111, 140, 190, 10, 114, 87, 163, 44, 112, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 88, 71, 45, 107, 90, 140, 190, 10, 93, 100, 144, 76, 89, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 86, 110, 95, 100, 90, 140, 190, 10, 94, 107, 146, 77, 89, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 89, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\n";
+  return code;
+}
+
+Blockly.Python['1781253479229'] = function(block) {
+  let code = "base_action.action('holdBoxMoveFront（2）')\n";
+  return code;
+}
+
+Blockly.Blocks['1781253475813'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781253475813",
+      "message0": "holdBoxMoveBack",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781253475813'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(60,10,190,65,75,80,75,65,140,190,10,65,75,80,75,65,0,0,0)\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 90, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 86, 90, 95, 84, 90, 140, 190, 10, 94, 107, 146, 78, 87, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 88, 71, 53, 105, 85, 140, 190, 10, 93, 100, 144, 79, 91, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 106, 93, 53, 124, 111, 140, 190, 10, 114, 87, 163, 42, 110, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 106, 95, 53, 122, 113, 140, 190, 10, 114, 110, 105, 114, 110, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 107, 100, 56, 121, 109, 140, 190, 10, 112, 129, 147, 95, 115, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 86, 113, 37, 158, 90, 140, 190, 10, 94, 107, 147, 76, 89, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 86, 110, 95, 100, 90, 140, 190, 10, 94, 107, 146, 77, 89, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 90, 91, 48, 129, 88, 140, 190, 10, 94, 107, 146, 76, 90, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\n";
+  return code;
+}
+
+Blockly.Python['1781253475813'] = function(block) {
+  let code = "base_action.action('holdBoxMoveBack')\n";
+  return code;
+}
+
+Blockly.Blocks['1781316824397'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781316824397",
+      "message0": "抱块小幅度左转2",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781316824397'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(30,30,30,85,85,85,85,45,30,30,30,85,85,85,85,45,0,0,0)\nMOTOsetspeed(40)\nMOTOmove19(60, 15, 190, 96, 97, 55, 130, 96, 132, 187, 10, 101, 117, 145, 82, 103, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(20)\nMOTOmove19(60, 15, 190, 96, 97, 55, 130, 103, 132, 187, 10, 101, 117, 145, 82, 107, 0, 0, 100)\nMOTOwait()\nDelayMs(200)\nMOTOsetspeed(15)\nMOTOmove19(60, 15, 190, 100, 88, 55, 124, 100, 132, 187, 10, 100, 107, 135, 81, 104, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 15, 190, 100, 93, 55, 124, 100, 132, 187, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\n";
+  return code;
+}
+
+Blockly.Python['1781316824397'] = function(block) {
+  let code = "base_action.action('抱块小幅度左转2')\n";
+  return code;
+}
+
+Blockly.Blocks['1781316828756'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781316828756",
+      "message0": "抱块小幅度右转2",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781316828756'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(30,30,30,85,85,85,85,45,30,30,30,85,85,85,85,45,0,0,0)\nMOTOsetspeed(45)\nMOTOmove19(60, 15, 190, 99, 88, 55, 118, 97, 132, 187, 10, 104, 98, 145, 70, 104, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(13)\nMOTOmove19(60, 15, 190, 99, 88, 55, 118, 76, 132, 187, 10, 104, 98, 145, 70, 93, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(8)\nMOTOmove19(60, 15, 190, 100, 98, 65, 119, 85, 132, 187, 10, 100, 107, 145, 76, 93, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(20)\nMOTOmove19(60, 15, 190, 98, 92, 52, 124, 93, 132, 187, 10, 100, 107, 145, 76, 93, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(6)\nMOTOmove19(60, 15, 190, 100, 93, 55, 124, 100, 132, 187, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\nDelayMs(200)\n";
+  return code;
+}
+
+Blockly.Python['1781316828756'] = function(block) {
+  let code = "base_action.action('抱块小幅度右转2')\n";
+  return code;
+}
+
+Blockly.Blocks['1781316860271'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781316860271",
+      "message0": "有块小左移",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781316860271'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(100,100,100,65,100,100,100,65,100,100,100,65,100,100,100,65,0,0,0)\nMOTOsetspeed(30)\nMOTOmove19(60, 15, 190, 100, 93, 55, 128, 100, 132, 187, 10, 100, 107, 145, 72, 100, 0, 0, 100)\nMOTOwait()\nMOTOrigid16(20,20,20,85,85,95,85,85,20,20,20,85,100,100,100,85,0,0,0)\nMOTOsetspeed(10)\nMOTOmove19(60, 15, 190, 90, 98, 64, 128, 90, 132, 187, 10, 95, 107, 146, 72, 95, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(20)\nMOTOmove19(60, 15, 190, 95, 93, 54, 128, 90, 132, 187, 10, 105, 107, 146, 72, 100, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(12)\nMOTOmove19(60, 15, 190, 98, 93, 54, 128, 102, 132, 187, 10, 109, 107, 146, 72, 112, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 15, 190, 98, 94, 54, 128, 102, 132, 187, 10, 103, 105, 139, 77, 109, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(10)\nMOTOmove19(60, 15, 190, 98, 93, 54, 128, 102, 132, 187, 10, 103, 105, 139, 77, 109, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(10)\nMOTOmove19(60, 15, 190, 100, 93, 55, 128, 100, 132, 187, 10, 100, 107, 145, 72, 100, 0, 0, 100)\nMOTOwait()\n";
+  return code;
+}
+
+Blockly.Python['1781316860271'] = function(block) {
+  let code = "base_action.action('有块小左移')\n";
+  return code;
+}
+
+Blockly.Blocks['1781253481934'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781253481934",
+      "message0": "holdBoxMoveLeft",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781253481934'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(60,10,190,45,65,65,65,65,140,190,10,45,65,65,65,65,0,0,0)\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\nMOTOrigid16(60,10,190,85,85,95,85,85,140,190,10,85,85,95,85,85,0,0,0)\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 90, 93, 54, 124, 90, 140, 190, 10, 110, 107, 146, 76, 100, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 95, 93, 54, 124, 105, 140, 190, 10, 106, 107, 146, 76, 115, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOrigid16(60,10,190,85,85,95,85,85,140,190,10,85,55,55,55,85,0,0,0)\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 106, 93, 54, 124, 110, 140, 190, 10, 115, 107, 146, 76, 115, 0, 0, 100)\nMOTOwait()\nMOTOrigid16(60,10,190,85,55,55,55,85,140,190,10,85,85,95,85,85,0,0,0)\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\n";
+  return code;
+}
+
+Blockly.Python['1781253481934'] = function(block) {
+  let code = "base_action.action('holdBoxMoveLeft')\n";
+  return code;
+}
+
+Blockly.Blocks['1781253484648'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781253484648",
+      "message0": "holdBoxMoveRight",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781253484648'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(60,10,190,45,65,65,65,65,140,190,10,45,65,65,65,65,0,0,0)\nMOTOsetspeed(30)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\nMOTOrigid16(60,10,190,85,85,95,85,85,140,190,10,85,85,95,85,85,0,0,0)\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 90, 93, 54, 124, 100, 140, 190, 10, 110, 107, 146, 76, 110, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 94, 93, 54, 124, 85, 140, 190, 10, 105, 107, 146, 76, 95, 0, 0, 100)\nMOTOwait()\nDelayMs(100)\nMOTOrigid16(60,10,190,85,55,55,55,85,140,190,10,85,85,95,85,85,0,0,0)\nMOTOsetspeed(20)\nMOTOmove19(60, 10, 190, 85, 93, 54, 124, 85, 140, 190, 10, 94, 107, 146, 76, 90, 0, 0, 100)\nMOTOwait()\nMOTOrigid16(60,10,190,85,55,55,55,85,140,190,10,85,85,95,85,85,0,0,0)\nMOTOsetspeed(10)\nMOTOmove19(60, 10, 190, 100, 93, 55, 124, 100, 140, 190, 10, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\n";
+  return code;
+}
+
+Blockly.Python['1781253484648'] = function(block) {
+  let code = "base_action.action('holdBoxMoveRight')\n";
+  return code;
+}
+
+Blockly.Blocks['1781317743168'] = {
+  init: function() {
+    this.jsonInit({
+      "type": "1781317743168",
+      "message0": "放下箱子",
+      "previousStatement": "motion_block",
+      "nextStatement": "motion_block",
+      "colour": '#C643F1',
+      "toolip": "",
+      "helpUrl": ""
+    });
+  }
+};
+
+Blockly.Lua['1781317743168'] = function(block) {
+  let code = "MOTOsetspeed(30)\nMOTOrigid16(40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,0,0,0)\nMOTOsetspeed(15)\nMOTOmove19(60, 15, 190, 100, 93, 55, 130, 98, 132, 187, 10, 100, 107, 145, 70, 102, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(15)\nMOTOmove19(60, 15, 190, 99, 90, 150, 38, 100, 132, 187, 10, 101, 111, 50, 163, 99, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(15)\nMOTOmove19(59, 14, 148, 99, 122, 150, 39, 100, 134, 188, 56, 101, 79, 50, 163, 99, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(15)\nMOTOmove19(72, 14, 147, 99, 122, 150, 39, 100, 130, 176, 57, 101, 79, 50, 163, 99, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(15)\nMOTOmove19(72, 14, 147, 99, 98, 150, 40, 100, 130, 176, 57, 100, 105, 50, 163, 99, 0, 0, 100)\nMOTOwait()\nMOTOsetspeed(20)\nMOTOmove19(80, 30, 100, 100, 93, 55, 124, 100, 120, 170, 100, 100, 107, 145, 76, 100, 0, 0, 100)\nMOTOwait()\n";
+  return code;
+}
+
+Blockly.Python['1781317743168'] = function(block) {
+  let code = "base_action.action('放下箱子')\n";
+  return code;
+}
+
