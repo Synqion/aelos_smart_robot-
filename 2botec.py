@@ -384,12 +384,12 @@ if __name__ == '__main__':
     while not rospy.is_shutdown():
         if ID == 0:  #搬箱子
             if level == "start_box":
-                find_box(Chest_img, 'green')
+                find_box(Chest_img, 'orange')
                 goto_box()
                 time.sleep(0.1)
             elif level == "end_box":
                 if step == 1:
-                    box_go2(2)
+                    box_go2(3)
                     BoxR_turn2(1)
 
                 elif step == 2:
@@ -405,8 +405,11 @@ if __name__ == '__main__':
                     print("右转")
                     BoxR_turn2(1)
                 elif (ID == 1 and level == "start_moving") or ID == 2 or ID == 3 or ID == 4 or (ID == 5 and step == 1):
-                    print("抱着箱子后退")
-                    Box_Back(1)
+                    # print("抱着箱子后退")
+                    # Box_Back(1)
+                    # 一直右转直到找到
+                    print("右转")
+                    BoxR_turn2(1)
                 elif (ID == 5 and step == 2 and level == "start_moving"):
                     print("右转")
                     R_turn2(1)
