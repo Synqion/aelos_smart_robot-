@@ -1,0 +1,244 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id=".A6{hpkEeU,t4_m(uf}3">触摸</variable>
+  </variables>
+  <block type="1680745663962" id=".%1abGjfWkxD?JB,Y}U4" x="-116" y="-802"></block>
+  <block type="start" id="!JODDDpDPuBO86x3{r0}" deletable="false" x="-1069" y="-705">
+    <statement name="do">
+      <block type="Squat" id="#As0m2yk_.6wK$N6ssiE"></block>
+    </statement>
+  </block>
+  <block type="1761533920362" id="bSn)DrR:ME38l}=wfypF" x="-782" y="-701"></block>
+  <block type="1680752259809" id="}?g0y}N[Cx0nR+ZxJLSu" x="-213" y="-727">
+    <next>
+      <block type="1680752248086" id="(Ul]i-IjMr/g8)%TGmq."></block>
+    </next>
+  </block>
+  <block type="1747132219849" id="IZUw%r`wAY6e@SMko!Dv" x="53" y="-708"></block>
+  <block type="1680752266437" id="Jmem0c=SR0$8G=N:R.cn" x="-193" y="-657"></block>
+  <block type="1747131859680" id="`14kp:Ek.)zb-]VVd!H$" x="341" y="-676"></block>
+  <block type="1680752171445" id="r4B?hr(DJ^A-!|u~l[-J" x="-782" y="-596"></block>
+  <block type="1680745711207" id="g;tlE}[E.@[(xR-W~.Ks" x="-48" y="-602">
+    <next>
+      <block type="1748314190686" id="`x-RCF}v{8o-Q*%D^%bq">
+        <next>
+          <block type="1748314353458" id="qJqxq1LuAKhjtf?bJ]%B"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="1747131964248" id="bY7~dd9ntdL3[VTo+j5T" x="-615" y="-564"></block>
+  <block type="1680745704642" id="MQ]Ziu(;-^V1{s1WhiG/" x="-244" y="-539"></block>
+  <block type="1761534066416" id="RK1hoE8viha=?}yIvF+K" x="-622" y="-484"></block>
+  <block type="1680745663962" id="s`fp{D@u#K,Y,H610)T=" x="13" y="-497"></block>
+  <block type="aelos_while" id="a]`gH@;)*zJ3pBr7Zm*n" x="387" y="-503">
+    <value name="condition">
+      <block type="logic_boolean" id="bvxUYEhq%b{##-w7@wZL">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+    <statement name="do">
+      <block type="sensor" id="qET|Ez7w,?[5a#8:P@%2">
+        <field name="port">2</field>
+        <value name="variable">
+          <block type="variables_get" id="=kvCIv3i^0n9U7}^520:">
+            <field name="VAR" id=".A6{hpkEeU,t4_m(uf}3" variabletype="">触摸</field>
+          </block>
+        </value>
+        <next>
+          <block type="aelos_if" id="*.t2^y]j=cy@3jJuop!D">
+            <value name="condition">
+              <block type="aelos_compare" id="n]=l;q_@DEudS?i3$|gy">
+                <field name="OP">JNE</field>
+                <value name="input_1">
+                  <block type="variables_get" id="VH1/Z47L)X#xcT1pEN:W">
+                    <field name="VAR" id=".A6{hpkEeU,t4_m(uf}3" variabletype="">触摸</field>
+                  </block>
+                </value>
+                <value name="input_2">
+                  <block type="math_number" id="Y)3F@/e=rTyrWPbwe:5n">
+                    <field name="NUM">3</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="do">
+              <block type="io_out" id="/9M3aqeo?C=nt%l%C995">
+                <field name="output_value">1</field>
+                <field name="port">1</field>
+              </block>
+            </statement>
+            <next>
+              <block type="aelos_if" id="ha_Muj0Vw1!X[3tTI.6;">
+                <value name="condition">
+                  <block type="aelos_compare" id="ZD)|wqF5Ey0WRn2@!Vy!">
+                    <field name="OP">JNE</field>
+                    <value name="input_1">
+                      <block type="variables_get" id="@F@1BUBHy4Xf;Zw@)OrF">
+                        <field name="VAR" id=".A6{hpkEeU,t4_m(uf}3" variabletype="">触摸</field>
+                      </block>
+                    </value>
+                    <value name="input_2">
+                      <block type="math_number" id="L=|xuqJ96M6H(CPcMHuE">
+                        <field name="NUM">255</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="do">
+                  <block type="io_out" id=":Sb0v5.+Vq!zWd}cY/:n">
+                    <field name="output_value">0</field>
+                    <field name="port">1</field>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="Turn_left_1_step" id="MrQB8v[[EBDmh#jFKcS4" x="176" y="-426"></block>
+  <block type="1761534192197" id="b!4.bTS~AMvYh!l7iwm]" x="-379" y="-392"></block>
+  <block type="1680745688797" id="LupW7aA79/Mu5hWb(H`[" x="-147" y="-398"></block>
+  <block type="1752148758694" id="c.nEC[5nmG#*+D#ERh,4" x="0" y="-361"></block>
+  <block type="1680745711207" id="E3yk~WzQ[Q,UfWAgFl1[" x="-605" y="-324"></block>
+  <block type="1752148883714" id="W5bo#?/#)t(^}g,$NpgO" x="175" y="-279"></block>
+  <block type="1747131859680" id="K4#yS?Jb6HUK#vQ)=NlZ" x="-10" y="-266"></block>
+  <block type="1752150226420" id="_QgQTh(I:jIq)tl~yTP@" x="188" y="-266"></block>
+  <block type="1747462641042" id="lqikttORX|.lBwDDq%_`" x="242" y="-238"></block>
+  <block type="1747462648861" id="TVOS.I!mk%tx0`|I$jTj" x="256" y="-224"></block>
+  <block type="aelos_if_else" id="PaPlt?M1$DpQ5RPX;Tbx" x="-650" y="-163">
+    <value name="condition">
+      <block type="aelos_compare" id="(Ab9`a?$[u2{]$drwpzP">
+        <field name="OP">JAE</field>
+        <value name="input_1">
+          <block type="variables_get" id="!GzM}STy}dvp|=ap2*Hc">
+            <field name="VAR" id=".A6{hpkEeU,t4_m(uf}3" variabletype="">触摸</field>
+          </block>
+        </value>
+        <value name="input_2">
+          <block type="math_number" id="ddT`Z3vID}6qsXdCr$a$">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="if_do">
+      <block type="1752562916644" id="8703,$L%Sl=r-o{G7mul">
+        <next>
+          <block type="io_out" id="77|i-}6c19uHYAEU,+V3">
+            <field name="output_value">0</field>
+            <field name="port">2</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="else_do">
+      <block type="Stand_up" id="xIgwgI{moB*=M)+!O.5x">
+        <next>
+          <block type="io_out" id="QXw,Z^tyhu4k)*rr9dzV">
+            <field name="output_value">1</field>
+            <field name="port">2</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="aelos_while" id="OG7BLbnIZ{wj88TE#qZl">
+        <value name="condition">
+          <block type="logic_boolean" id="U8DGi.PqW5$T?MA5Cq6U">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="do">
+          <block type="sensor" id="C?I3uqph(rty[*.=l6DR">
+            <field name="port">1</field>
+            <value name="variable">
+              <block type="variables_get" id="/}Q*vQ~p,Afg2l5Ws~3P">
+                <field name="VAR" id=".A6{hpkEeU,t4_m(uf}3" variabletype="">触摸</field>
+              </block>
+            </value>
+            <next>
+              <block type="aelos_if" id="d_52X/}O$.x86ATdCuA*">
+                <value name="condition">
+                  <block type="aelos_compare" id="EB7d%6y`u!ZZAxY!L9o$">
+                    <field name="OP">JNE</field>
+                    <value name="input_1">
+                      <block type="variables_get" id="!U+8LQ`Pm2MZvcLU(n2r">
+                        <field name="VAR" id=".A6{hpkEeU,t4_m(uf}3" variabletype="">触摸</field>
+                      </block>
+                    </value>
+                    <value name="input_2">
+                      <block type="math_number" id="%s{-_StpKiHpWA=t5I1T">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="do">
+                  <block type="1752562916644" id="qr%wunQsVovbd4.`b^Z[">
+                    <next>
+                      <block type="io_out" id=";3ea^If.LGVfbml]Rfl!">
+                        <field name="output_value">0</field>
+                        <field name="port">2</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="aelos_if" id="Ai:6~SZ;KCa~+?3P|7Rx">
+                    <value name="condition">
+                      <block type="aelos_compare" id="BcTCBnn4frJE~Zck3.fK">
+                        <field name="OP">JNE</field>
+                        <value name="input_1">
+                          <block type="variables_get" id="5~?Zm`~fT[30b+fYT^tk">
+                            <field name="VAR" id=".A6{hpkEeU,t4_m(uf}3" variabletype="">触摸</field>
+                          </block>
+                        </value>
+                        <value name="input_2">
+                          <block type="math_number" id="t0Lo4aBlBkC)K!)JlQ5M">
+                            <field name="NUM">255</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="do">
+                      <block type="Stand_up" id="=srvaKS7*WvYBn{w+)(v">
+                        <next>
+                          <block type="io_out" id="8co}bUI$.2??O)YDG+-X">
+                            <field name="output_value">1</field>
+                            <field name="port">2</field>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+  <block type="1747462655468" id="^%D=]Yw[yZ.Z#neD,rk%" x="271" y="-209"></block>
+  <block type="1747462682253" id="+wb9T0}u:q?MiM^+ijv-" x="286" y="-194"></block>
+  <block type="1748334485079" id="MgLbK,{y-0n|~yGVv@^s" x="242" y="-173"></block>
+  <block type="1680752259809" id="y})W!CrqDbaq:EcypUzT" x="-57" y="-147"></block>
+  <block type="aelos_if" id="vz!@=rVX_gngRt^h]0E7" x="-236" y="-111"></block>
+  <block type="1748334504674" id="qpkpqT/clk1{J1t_:Qh6" x="267" y="-132"></block>
+  <block type="aelos_while" id="xYR%D,6]4#|vMHCXovGA" x="534" y="6">
+    <value name="condition">
+      <block type="logic_boolean" id="s:h+.MQautn{UVLI3sKc">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+    <statement name="do">
+      <block type="Squat" id="xH/t+pZE6uQ_v;yf%ClN"></block>
+    </statement>
+  </block>
+  <block type="repeat_until" id="WzBC^cH1oEd3zS.WS1yX" x="104" y="136"></block>
+  <block type="aelos_if" id="TaktmD}`E#b9mz~-/;Hv" x="228" y="134"></block>
+  <block type="1680752266437" id="Y;JChDwXiFu5+K$d%L2v" x="-363" y="237"></block>
+</xml>
