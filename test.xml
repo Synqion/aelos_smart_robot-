@@ -2,12 +2,14 @@
   <variables>
     <variable type="" id=".A6{hpkEeU,t4_m(uf}3">触摸</variable>
   </variables>
+  <block type="1680753447030" id="~d8gnhPGz)Kkn3:kcq#E" x="-381" y="-874"></block>
   <block type="1680745663962" id=".%1abGjfWkxD?JB,Y}U4" x="-116" y="-802"></block>
   <block type="start" id="!JODDDpDPuBO86x3{r0}" deletable="false" x="-1069" y="-705">
     <statement name="do">
       <block type="Squat" id="#As0m2yk_.6wK$N6ssiE"></block>
     </statement>
   </block>
+  <block type="1782523456850" id=";JO]Gc]?OnbHj$i*VHZe" x="-515" y="-719"></block>
   <block type="1761533920362" id="bSn)DrR:ME38l}=wfypF" x="-782" y="-701"></block>
   <block type="1680752259809" id="}?g0y}N[Cx0nR+ZxJLSu" x="-213" y="-727">
     <next>
@@ -17,6 +19,7 @@
   <block type="1747132219849" id="IZUw%r`wAY6e@SMko!Dv" x="53" y="-708"></block>
   <block type="1680752266437" id="Jmem0c=SR0$8G=N:R.cn" x="-193" y="-657"></block>
   <block type="1747131859680" id="`14kp:Ek.)zb-]VVd!H$" x="341" y="-676"></block>
+  <block type="1782523833886" id="nn9su[)6/a/o;E[Ja}$1" x="-468" y="-629"></block>
   <block type="1680752171445" id="r4B?hr(DJ^A-!|u~l[-J" x="-782" y="-596"></block>
   <block type="1680745711207" id="g;tlE}[E.@[(xR-W~.Ks" x="-48" y="-602">
     <next>
@@ -27,7 +30,9 @@
       </block>
     </next>
   </block>
+  <block type="1680753457326" id="*RUc!!a{+w?j2D~M})G," x="-1318" y="-529"></block>
   <block type="1747131964248" id="bY7~dd9ntdL3[VTo+j5T" x="-615" y="-564"></block>
+  <block type="1782524823106" id="S4FyVT?gt|E}*^%zG{5}" x="-782" y="-526"></block>
   <block type="1680745704642" id="MQ]Ziu(;-^V1{s1WhiG/" x="-244" y="-539"></block>
   <block type="1761534066416" id="RK1hoE8viha=?}yIvF+K" x="-622" y="-484"></block>
   <block type="1680745663962" id="s`fp{D@u#K,Y,H610)T=" x="13" y="-497"></block>
@@ -103,6 +108,7 @@
   <block type="1680745688797" id="LupW7aA79/Mu5hWb(H`[" x="-147" y="-398"></block>
   <block type="1752148758694" id="c.nEC[5nmG#*+D#ERh,4" x="0" y="-361"></block>
   <block type="1680745711207" id="E3yk~WzQ[Q,UfWAgFl1[" x="-605" y="-324"></block>
+  <block type="1782522901042" id="7Uh)aT.$uXVDiWVPn/TM" x="-974" y="-227"></block>
   <block type="1752148883714" id="W5bo#?/#)t(^}g,$NpgO" x="175" y="-279"></block>
   <block type="1747131859680" id="K4#yS?Jb6HUK#vQ)=NlZ" x="-10" y="-266"></block>
   <block type="1752150226420" id="_QgQTh(I:jIq)tl~yTP@" x="188" y="-266"></block>
